@@ -1,3 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
 .game{
     height: 200px;
     width: 600px;
@@ -21,9 +27,9 @@
 
 @keyframes jump{
     0% {top: 150px;}
-    30% {top: 130px;}
-    50% {top: 80px;}
-    80% {top: 130px;}
+    30% { top: 120px; }
+    50% {top: 50px;}
+    80% {top: 120px;}
     100% {top: 150px;}
 }
 
@@ -37,7 +43,7 @@
     /* background-color: black ; */
     background-image: url("images/cactus.png");
     background-size: 20px 40px;
-    animation: block 1s infinite linear;
+    animation: block 2s infinite linear;
   }
   
   @keyframes block {
