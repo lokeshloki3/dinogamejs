@@ -7,7 +7,7 @@ function jump() {
 
         setTimeout(function () {
             dino.classList.remove("jump");
-        }, 400);  // Increased jump duration for smoother jump
+        }, 400);
     }
 }
 
@@ -18,7 +18,6 @@ let isAlive = setInterval(function () {
 
     // Collision detection: when the cactus is near the dino and the dino is on the ground
     if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
-        // Collision detected, game over
         alert("Game Over!");
     }
 }, 10);
@@ -30,12 +29,12 @@ document.addEventListener("keydown", function (event) {
 
 // Mobile click/tap event listener (log to check if event is triggered)
 document.addEventListener("click", function (event) {
-    console.log("Click detected!"); // Debugging line to check if the event is triggered
+    // console.log("Click detected!");
     jump();
 });
 
 // Alternatively, use touchstart for more responsive mobile behavior
 document.addEventListener("touchstart", function (event) {
-    console.log("Touch detected!"); // Debugging line to check if the event is triggered
+    // console.log("Touch detected!"); 
     jump();
 });
